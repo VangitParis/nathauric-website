@@ -58,8 +58,8 @@ export default function Home() {
 
       <section className={styles.contact}>
         <h2>Prendre Rendez-vous</h2>
-        <p>📞 <a href="tel:0759658746">07 59 65 87 46</a></p>
-        <p>✉️ <a href="mailto:nathaurieByN@hotmail.com">nathaurieByN@hotmail.com</a></p>
+        <p>📞 <a href="tel:0759658746">07 59 65 83 65</a></p>
+        <p>✉️ <a href="mailto:nathauric.reflex@hotmail.com">nathauric.reflex@hotmail.com</a></p>
         <p>📍 Aulnay-sous-Bois, Île-de-France</p>
       </section>
 
