@@ -125,6 +125,7 @@ $accent-color: #b76e79;
 
     li {
       margin-bottom: 0.5rem;
+      color: black;
     }
   }
 }
@@ -132,6 +133,7 @@ $accent-color: #b76e79;
 .testimonials {
   margin-bottom: 2rem;
   text-align: center;
+  
 
   blockquote {
     font-style: italic;
@@ -141,6 +143,7 @@ $accent-color: #b76e79;
     border-left: 4px solid $accent-color;
     background-color: lighten($primary-color, 10%);
     border-radius: 8px;
+    color: black;
 
     @media (max-width: 768px) {
       font-size: 0.9rem;
