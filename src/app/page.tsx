@@ -1,5 +1,7 @@
 import styles from './page.module.scss';
 import Head from 'next/head';
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
@@ -9,9 +11,17 @@ export default function Home() {
         <meta name="description" content="Auriculothérapie spécialisée à Aulnay-sous-Bois pour votre bien-être physique et émotionnel." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-
       <header className={styles.header}>
         <h1>Nathauric <span>by Nataly Gonçalves</span></h1>
+        <div className={styles.logoWrapper}>
+        <Image
+          src="/logo.jpg"
+          alt="Logo Nathauric"
+          width={100}
+          height={100}
+          priority
+        />
+      </div>
         <p>Je suis votre experte en auriculothérapie à Aulnay-sous-Bois, dédiée à rétablir votre équilibre corps-esprit.</p>
       </header>
 
