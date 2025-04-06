@@ -1,0 +1,96 @@
+$primary-color: #f9e0e2;
+$accent-color: #b76e79;
+
+.container {
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $accent-color;
+
+    span {
+      display: block;
+      font-size: 1.4rem;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+}
+
+.intro,
+.about {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.services {
+  background-color: $primary-color;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    color: $accent-color;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.testimonials {
+  margin-bottom: 2rem;
+  text-align: center;
+
+  blockquote {
+    font-style: italic;
+    margin: 1rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    border-left: 4px solid $accent-color;
+    background-color: lighten($primary-color, 10%);
+    border-radius: 8px;
+  }
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  a {
+    color: $accent-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer {
+  border-top: 1px solid $primary-color;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
