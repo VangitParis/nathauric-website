@@ -50,7 +50,7 @@ $accent-color: #b76e79;
 .container > footer {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50 auto;
 }
 
 
@@ -155,9 +155,10 @@ $accent-color: #b76e79;
 .contact {
   text-align: center;
   margin-bottom: 2rem;
-
+  font-weight: bold;
   a {
     color: $accent-color;
+  
     text-decoration: none;
 
     &:hover {
