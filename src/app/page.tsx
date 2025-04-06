@@ -35,6 +35,7 @@ export default function Home() {
           <li>Traitement des douleurs chroniques</li>
           <li>Réduction du stress et de l&apos;anxiété</li>
           <li>Aide à l&apos;arrêt du tabac</li>
+          <li>Aide à la perte de poids grâce à l&apos;arrêt du sucre</li>
           <li>Gestion du sommeil et des troubles associés</li>
           <li>Amélioration du confort digestif</li>
           <li>Accompagnement émotionnel personnalisé</li>
