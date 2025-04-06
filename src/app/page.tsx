@@ -7,23 +7,24 @@ export default function Home() {
       <Head>
         <title>Nathauric by Nataly Gonçalves - Aulnay-sous-Bois</title>
         <meta name="description" content="Auriculothérapie spécialisée à Aulnay-sous-Bois pour votre bien-être physique et émotionnel." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <header className={styles.header}>
         <h1>Nathauric <span>by Nataly Gonçalves</span></h1>
-        <p>Votre experte en auriculothérapie à Aulnay-sous-Bois pour un équilibre parfait corps-esprit</p>
+        <p>Je suis votre experte en auriculothérapie à Aulnay-sous-Bois, dédiée à rétablir votre équilibre corps-esprit.</p>
       </header>
 
       <section className={styles.intro}>
-        <p>L’auriculothérapie est une méthode douce et naturelle issue de la médecine traditionnelle chinoise. Elle permet de traiter de nombreux troubles physiques et émotionnels par stimulation précise des points réflexes situés sur l'oreille. Nathauric vous propose un accompagnement personnalisé et bienveillant pour retrouver équilibre et sérénité.</p>
+        <p>L&apos;auriculothérapie est une méthode douce et naturelle issue de la médecine traditionnelle chinoise. J&apos;utilise la stimulation précise des points réflexes situés sur l&apos;oreille pour traiter divers troubles physiques et émotionnels. Mon approche personnalisée vous aide à retrouver équilibre et sérénité.</p>
       </section>
 
       <section className={styles.services}>
         <h2>Mes Spécialités</h2>
         <ul>
           <li>Traitement des douleurs chroniques</li>
-          <li>Réduction du stress et de l'anxiété</li>
-          <li>Aide à l'arrêt du tabac</li>
+          <li>Réduction du stress et de l&apos;anxiété</li>
+          <li>Aide à l&apos;arrêt du tabac</li>
           <li>Gestion du sommeil et des troubles associés</li>
           <li>Amélioration du confort digestif</li>
           <li>Accompagnement émotionnel personnalisé</li>
@@ -31,17 +32,17 @@ export default function Home() {
       </section>
 
       <section className={styles.about}>
-        <h2>À propos de Nathauric</h2>
-        <p>Formée et passionnée par les médecines douces, Nataly Gonçalves met à votre disposition son savoir-faire et sa sensibilité pour répondre à vos besoins spécifiques. Chaque séance est unique, adaptée à vos attentes pour des résultats concrets et durables.</p>
+        <h2>À propos de moi</h2>
+        <p>Passionnée par les médecines douces, je mets à votre disposition mon savoir-faire et mon écoute attentive pour répondre précisément à vos besoins. Chaque séance est unique, adaptée à vos attentes afin d&apos;obtenir des résultats concrets et durables.</p>
       </section>
 
       <section className={styles.testimonials}>
         <h2>Témoignages de mes clients</h2>
         <blockquote>
-          "Grâce à Nataly, j'ai pu diminuer considérablement mes douleurs chroniques, je revis !" – Sophie, 45 ans
+          &quot;Grâce à Nataly, j&apos;ai pu diminuer considérablement mes douleurs chroniques, je revis !&quot; – Sophie, 45 ans
         </blockquote>
         <blockquote>
-          "Une expérience apaisante et très bénéfique, je recommande vivement." – Julien, 32 ans
+          &quot;Une expérience apaisante et très bénéfique, je recommande vivement.&quot; – Julien, 32 ans
         </blockquote>
       </section>
 
