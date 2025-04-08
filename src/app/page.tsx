@@ -1,7 +1,8 @@
 import styles from './page.module.scss';
 import Head from 'next/head';
 import Image from 'next/image';
-
+import CookieBanner from './components/CookieBanner';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -11,11 +12,44 @@ export default function Home() {
         <meta name="description" content="Auriculothérapie spécialisée à Aulnay-sous-Bois pour votre bien-être physique et émotionnel." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Nathauric",
+      image: "https://www.nathauric.com/logo-nathauric.png",
+      "@id": "https://www.nathauric.com",
+      url: "https://www.nathauric.com",
+      telephone: "+33759658365",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Aulnay-sous-Bois",
+        addressLocality: "Aulnay-sous-Bois",
+        postalCode: "93600",
+        addressCountry: "FR"
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "48.939",
+        longitude: "2.494"
+      },
+      sameAs: [
+        "https://www.instagram.com/...",
+        "https://www.facebook.com/..."
+      ],
+      description:
+        "Auriculothérapie à Aulnay-sous-Bois : douleurs, stress, arrêt tabac, insomnie. Consultations personnalisées avec Nataly Gonçalves."
+    }),
+  }}
+/>
+
       <header className={styles.header}>
         <h1>Nathauric <span>by Nataly Gonçalves</span></h1>
         <div className={styles.logoWrapper}>
         <Image
-          src="/logo.jpg"
+          src="/logo-nathauric.png"
           alt="Logo Nathauric"
           width={100}
           height={100}
@@ -63,10 +97,12 @@ export default function Home() {
         <p>✉️ <a href="mailto:nathauric.reflex@hotmail.com">nathauric.reflex@hotmail.com</a></p>
         <p>📍 Aulnay-sous-Bois, Île-de-France</p>
       </section>
-
+      
       <footer className={styles.footer}>
-        © 2025 Nathauric by Nataly Gonçalves - Tous droits réservés
-      </footer>
+    © 2025 Nathauric by Nataly Gonçalves – Auriculothérapie à Aulnay-sous-Bois | <Link href="/politique-de-confidentialite">Politique de confidentialité</Link> | <Link href="/mentions-legales">Mentions légales</Link>
+
+  </footer>
+      <CookieBanner />
     </main>
   );
 }
