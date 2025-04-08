@@ -11,51 +11,51 @@ export default function Home() {
         <title>Nathauric by Nataly Gonçalves - Aulnay-sous-Bois</title>
         <meta name="description" content="Auriculothérapie spécialisée à Aulnay-sous-Bois pour votre bien-être physique et émotionnel." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Nathauric",
+              image: "https://www.nathauric.com/logo-nathauric.png",
+              "@id": "https://www.nathauric.com",
+              url: "https://www.nathauric.com",
+              telephone: "+33759658365",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Aulnay-sous-Bois",
+                addressLocality: "Aulnay-sous-Bois",
+                postalCode: "93600",
+                addressCountry: "FR"
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "48.939",
+                longitude: "2.494"
+              },
+              sameAs: [
+                "https://www.instagram.com/...",
+                "https://www.facebook.com/..."
+              ],
+              description:
+                "Auriculothérapie à Aulnay-sous-Bois : douleurs, stress, arrêt tabac, insomnie. Consultations personnalisées avec Nataly Gonçalves."
+            })
+          }}
+        />
       </Head>
-      <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Nathauric",
-      image: "https://www.nathauric.com/logo-nathauric.png",
-      "@id": "https://www.nathauric.com",
-      url: "https://www.nathauric.com",
-      telephone: "+33759658365",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Aulnay-sous-Bois",
-        addressLocality: "Aulnay-sous-Bois",
-        postalCode: "93600",
-        addressCountry: "FR"
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: "48.939",
-        longitude: "2.494"
-      },
-      sameAs: [
-        "https://www.instagram.com/...",
-        "https://www.facebook.com/..."
-      ],
-      description:
-        "Auriculothérapie à Aulnay-sous-Bois : douleurs, stress, arrêt tabac, insomnie. Consultations personnalisées avec Nataly Gonçalves."
-    }),
-  }}
-/>
 
       <header className={styles.header}>
         <h1>Nathauric <span>by Nataly Gonçalves</span></h1>
         <div className={styles.logoWrapper}>
-        <Image
-          src="/logo-nathauric.png"
-          alt="Logo Nathauric"
-          width={100}
-          height={100}
-          priority
-        />
-      </div>
+          <Image
+            src="/logo-nathauric.png"
+            alt="Logo Nathauric"
+            width={100}
+            height={100}
+            priority
+          />
+        </div>
         <p>Je suis votre experte en auriculothérapie à Aulnay-sous-Bois, dédiée à rétablir votre équilibre corps-esprit.</p>
       </header>
 
@@ -93,16 +93,18 @@ export default function Home() {
 
       <section className={styles.contact}>
         <h2>Prendre Rendez-vous</h2>
-        <p>📞 <a href="tel:0759658746">07 59 65 83 65</a></p>
+        <p>📞 <a href="tel:0759658365">07 59 65 83 65</a></p>
         <p>✉️ <a href="mailto:nathauric.reflex@hotmail.com">nathauric.reflex@hotmail.com</a></p>
         <p>📍 Aulnay-sous-Bois, Île-de-France</p>
       </section>
-      
-      <footer className={styles.footer}>
-    © 2025 Nathauric by Nataly Gonçalves – Auriculothérapie à Aulnay-sous-Bois | <Link href="/politique-de-confidentialite">Politique de confidentialité</Link> | <Link href="/mentions-legales">Mentions légales</Link>
 
-  </footer>
       <CookieBanner />
+
+      <footer className={styles.footer}>
+        © 2025 Nathauric by Nataly Gonçalves – Auriculothérapie à Aulnay-sous-Bois |{' '}
+        <Link href="/politique-de-confidentialite">Politique de confidentialité</Link> |{' '}
+        <Link href="/mentions-legales">Mentions légales</Link>
+      </footer>
     </main>
   );
 }
