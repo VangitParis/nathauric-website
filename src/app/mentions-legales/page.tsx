@@ -1,6 +1,6 @@
 import styles from '../page.module.scss';
 import Head from 'next/head';
-import Image from 'next/image';
+
 import Link from 'next/link';
 
 export default function MentionsLegales() {
@@ -16,13 +16,12 @@ export default function MentionsLegales() {
 
       <div className={styles.logoWrapper}>
         <Link href="/">
-          <Image
-            src="/logo-nathauric.png"
-            alt="Logo Nathauric"
-            width={90}
-            height={90}
-            priority
-          />
+        <img
+  src="logo-nathauric.png"
+  alt="Logo Nathauric"
+  width="90"
+  height="90"
+/>
         </Link>
       </div>
 

@@ -1,6 +1,6 @@
 import styles from './page.module.scss';
 import Head from 'next/head';
-import Image from 'next/image';
+
 import CookieBanner from './components/CookieBanner';
 import Link from 'next/link';
 
@@ -11,6 +11,7 @@ export default function Home() {
         <title>Nathauric by Nataly Gonçalves - Aulnay-sous-Bois</title>
         <meta name="description" content="Auriculothérapie spécialisée à Aulnay-sous-Bois pour votre bien-être physique et émotionnel." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -48,19 +49,18 @@ export default function Home() {
       <header className={styles.header}>
         <h1>Nathauric <span>by Nataly Gonçalves</span></h1>
         <div className={styles.logoWrapper}>
-          <Image
-            src="/logo-nathauric.png"
-            alt="Logo Nathauric"
-            width={100}
-            height={100}
-            priority
-          />
+        <img
+  src="logo-nathauric.png"
+  alt="Logo Nathauric"
+  width="100"
+  height="100"
+/>
         </div>
-        <p>Je suis votre experte en auriculothérapie à Aulnay-sous-Bois, dédiée à rétablir votre équilibre corps-esprit.</p>
+        <p>Je suis votre <strong>experte en auriculothérapie</strong> à Aulnay-sous-Bois, dédiée à <strong>rétablir votre équilibre corps-esprit.</strong></p>
       </header>
 
       <section className={styles.intro}>
-        <p>L&apos;auriculothérapie est une méthode douce et naturelle issue de la médecine traditionnelle chinoise. J&apos;utilise la stimulation précise des points réflexes situés sur l&apos;oreille pour traiter divers troubles physiques et émotionnels. Mon approche personnalisée vous aide à retrouver équilibre et sérénité.</p>
+        <p>L&apos;auriculothérapie est une <strong>méthode douce et naturelle</strong> issue de la médecine traditionnelle chinoise. J&apos;utilise la stimulation précise des points réflexes situés sur l&apos;oreille pour <strong>traiter divers troubles physiques et émotionnels.</strong> Mon approche personnalisée vous aide à retrouver équilibre et sérénité.</p>
       </section>
 
       <section className={styles.services}>
@@ -78,7 +78,7 @@ export default function Home() {
 
       <section className={styles.about}>
         <h2>À propos de moi</h2>
-        <p>Passionnée par les médecines douces, je mets à votre disposition mon savoir-faire et mon écoute attentive pour répondre précisément à vos besoins. Chaque séance est unique, adaptée à vos attentes afin d&apos;obtenir des résultats concrets et durables.</p>
+        <p>Passionnée par les médecines douces, <strong>je mets à votre disposition mon savoir-faire et mon écoute</strong> attentive pour répondre précisément à vos besoins. Chaque séance est <strong>unique, adaptée à vos attentes</strong> afin d&apos;obtenir des <strong>résultats concrets et durables.</strong></p>
       </section>
 
       <section className={styles.testimonials}>
