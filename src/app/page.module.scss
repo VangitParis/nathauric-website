@@ -108,6 +108,18 @@ $accent-color: #b76e79;
     }
   }
 }
+.intro img,
+.about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
 
 .services {
   background-color: $primary-color;

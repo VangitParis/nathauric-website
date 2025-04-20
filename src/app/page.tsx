@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from './page.module.scss';
 import Head from 'next/head';
 
@@ -52,14 +53,17 @@ export default function Home() {
         <img
   src="logo-nathauric.png"
   alt="Logo Nathauric"
-  width="100"
-  height="100"
+  width="50"
+  height="50"
 />
         </div>
         <p>Je suis votre <strong>experte en auriculothérapie</strong> à Aulnay-sous-Bois, dédiée à <strong>rétablir votre équilibre corps-esprit.</strong></p>
       </header>
 
+
+
       <section className={styles.intro}>
+      <img src="nath_praticienne.png" alt="Nathaly Gonçalves en train de réaliser la thérapie de réflexologie auriculaire" />
         <p>L&apos;auriculothérapie est une <strong>méthode douce et naturelle</strong> issue de la médecine traditionnelle chinoise. J&apos;utilise la stimulation précise des points réflexes situés sur l&apos;oreille pour <strong>traiter divers troubles physiques et émotionnels.</strong> Mon approche personnalisée vous aide à retrouver équilibre et sérénité.</p>
       </section>
 
@@ -77,9 +81,36 @@ export default function Home() {
       </section>
 
       <section className={styles.about}>
+  <h2>Ma certification</h2>
+  <img src="certificat.png" alt="Certification en auriculothérapie de Nataly Gonçalves" />
+  <p>
+    J’ai été <strong>formée par des professionnels reconnus</strong> en auriculothérapie et je suis titulaire d’un certificat délivré par l’<strong>École Internationale de Réflexothérapie Auriculaires</strong>. 
+    Ce diplôme atteste de mes <strong>compétences scientifiques et pratiques</strong> dans l’accompagnement des troubles physiques, émotionnels et énergétiques.
+  </p>
+  <p>
+    Ma certification me permet de vous proposer des <strong>soins sécurisés, adaptés et efficaces</strong>, dans le respect de l’éthique et de la confidentialité. Mon approche est holistique, 
+    prenant en compte votre corps, vos émotions et votre mode de vie.
+  </p>
+</section>
+
+      <section className={styles.about}>
         <h2>À propos de moi</h2>
         <p>Passionnée par les médecines douces, <strong>je mets à votre disposition mon savoir-faire et mon écoute</strong> attentive pour répondre précisément à vos besoins. Chaque séance est <strong>unique, adaptée à vos attentes</strong> afin d&apos;obtenir des <strong>résultats concrets et durables.</strong></p>
       </section>
+
+      <section className={styles.about}>
+  <h2>La salle de consultation</h2>
+  <img src="banc-de-consultation_1.png" alt="Salle de consultation d'auriculothérapie de Nathauric à Aulnay-sous-Bois" />
+  <p>
+    Ma salle de consultation a été pensée pour votre <strong>confort et votre bien-être</strong>. Vous y trouverez une ambiance <strong>chaleureuse, apaisante et confidentielle</strong>, 
+    propice à la détente et à la guérison.
+  </p>
+  <p>
+    Le mobilier, les équipements, la lumière douce et les huiles essentielles naturelles diffusées créent un environnement <strong>cocooning</strong> où vous pourrez 
+    <strong> lâcher prise en toute confiance</strong>. Mon objectif est de faire de chaque séance un moment de recentrage sur vous-même.
+  </p>
+</section>
+
 
       <section className={styles.testimonials}>
         <h2>Témoignages de mes clients</h2>
