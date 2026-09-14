@@ -23,4 +23,5 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 
 writeFileSync('public/sitemap.xml', sitemap.trim());
 
+
 console.log('✅ sitemap.xml généré avec succès');
