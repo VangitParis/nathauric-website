@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.nathauric.com/sitemap.xml
+Sitemap: https://nathauric.com/sitemap.xml
