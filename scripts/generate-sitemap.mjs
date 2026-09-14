@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 
-const baseUrl = 'https://www.nathauric.com';
+const baseUrl = 'https://nathauric.com';
 const pages = ['']; // tu peux en ajouter d'autres si tu as plusieurs pages
 
 const urls = pages.map(
